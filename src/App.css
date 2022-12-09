@@ -1,0 +1,842 @@
+.App {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+h1 {
+  font-weight: 400;
+  font-size: 8rem;
+  margin: 0;
+  position: relative;
+/*   text-indent: 50px; */
+}
+
+.home-title {
+  
+  transform : translateY(-25%);
+  width : 100%;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+
+section {
+  display : flex;
+  width : 100vw;
+  background : #F1F2EF;
+  justify-content: center;
+  flex-direction: column;
+  overflow : hidden;
+}
+
+.box {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height : 100vh;
+  /* border-bottom: 1px solid black; */
+  position : relative;
+}
+
+#box1 {
+  transform: translateY(-10%);
+
+}
+
+.header {
+  position : absolute;
+  top : 0%;
+  left : 0%;
+  padding : 50px;
+  display : flex;
+  justify-content: space-between;
+  width : 100%;
+}
+
+#box2 {
+  transform : translate(0px, 0px) !important;
+}
+
+#box9 {
+  height : 200vh;
+}
+
+.city {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom : 10px;
+}
+
+.bicycle {
+  margin-right : auto;
+}
+
+.count {
+  font-size : 18.75rem;
+  font-family: Inter;
+  padding: 10%;
+  border : 6px solid rgba(255, 255, 255, 0.5);;
+  display : flex ;
+  justify-content: center;
+  align-items: center;
+  background : url(./assets/img/bg_time.png);
+  background-size : cover;
+  border-radius: 162px;
+  margin-bottom : 3rem;
+}
+
+
+.line {
+  width: 90%;
+  max-width: 800px;
+  height: 8px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(174, 33, 33);
+}
+
+
+.peoples {
+  display : flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width : 75%;
+}
+
+.people {
+  margin : 1rem;
+  position : relative;
+  z-index : 1;
+}
+
+.ppl-bg-1 {
+  position : absolute;
+  z-index : 0;
+  transition: all 0.5s ease;
+}
+
+.ppl-bg-2 {
+  position : absolute;
+  z-index : 0;
+  top : 44%;
+  transition: all 0.5s ease;
+}
+
+.ppl-bg-3 {
+  position : absolute;
+  z-index : 0;
+  top : 59.5%;
+  left : 56.5%;
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  opacity : 0;
+  transition: all 0.5s ease;
+}
+
+.visible {
+  opacity : 1;
+  transition: all 0.5s ease;
+}
+
+#box7 {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  height : 100vh;
+}
+
+.card {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 379px;
+  opacity: 0.9;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+
+/* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  transition : all 0.5s ease;
+}
+
+.card:hover {
+  cursor : pointer;
+  transform : translateY(-10%);
+}
+
+.card1 {
+  background: url(./assets/img/card1bg.png);
+  background-size : cover;
+}
+
+.card2 {
+  background: url(./assets/img/card2bg.png);
+  background-size : cover;
+}
+
+.card3 {
+  background: url(./assets/img/card3bg.png);
+  background-size : cover;
+}
+
+
+.circle {
+  border-radius: 50%;
+  background-color: rgb(170, 170, 170);
+}
+
+.c-spotify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@keyframes randomFloating1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(10px, 10px);
+  }
+  40% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(-10px, -10px);
+  }
+  80% {
+    transform: translate(-10px, 5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes randomFloating2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(0px, 10px);
+  }
+  40% {
+    transform: translate(10px, 0px);
+  }
+  60% {
+    transform: translate(-10px, -10px);
+  }
+  80% {
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes randomFloating3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(0px, 10px);
+  }
+  40% {
+    transform: translate(10px, 0px);
+  }
+  60% {
+    transform: translate(-10px, -10px);
+  }
+  80% {
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.circle-spo {
+  width : 500px;
+  height : 500px;
+  border-radius: 50%;
+  background-color: #1B1B19;
+  /* animation : randomFloating1 5s ease-in-out infinite; */
+}
+
+.circle-app {
+  width : 367px;
+  height : 367px;
+  border-radius: 50%;
+  background-color: #1B1B19;
+  /* animation : randomFloating2 5s ease-in-out infinite; */
+}
+
+.circle-dee {
+  width : 300px;
+  height : 300px;
+  border-radius: 50%;
+  background-color: #1B1B19;
+  /* animation : randomFloating3 5s ease-in-out infinite; */
+}
+
+.c-apple {
+  width : 120px;
+  height : 120px;
+}
+
+.spotify3D {
+  transform: scale(0.5);
+}
+.apple3D {
+  transform : translateX(-5%)
+}
+
+.deezer3D {
+  transform : translate(5%, 5%)
+}
+
+.c-deezer {
+  width : 200px;
+  height : 200px;
+}
+
+.c-others {
+  width : 75px;
+  height : 75px;
+}
+
+.spotify {
+  position : absolute ;
+  top : 25%;
+  left : 10%;
+  animation: float 4s ease-in-out infinite;
+}
+
+.apple {
+  position : absolute ;
+  top : 15%;
+  left : 50%;
+  animation: float 4s ease-in-out infinite;
+
+}
+
+.deezer {
+  position : absolute ;
+  top : 60%;
+  left : 70%;
+  animation: float 4s ease-in-out infinite;
+
+}
+
+.others {
+  position : absolute ;
+  top : 18%;
+  left : 72%;
+  animation: float 4s ease-in-out infinite;
+
+}
+
+#box7 h4 {
+  position : absolute;
+  top : 5%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+}
+
+.legende {
+  display : flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width : 100%;
+  height : 100px;
+  transition : all 0.5s ease;
+
+}
+
+.l-discover {
+  position : relative ; 
+  top : 45vh
+}
+
+.legende-item {
+  display : flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding : 16px;
+  height : 50%;
+  border-radius : 5px;
+  transition : all 0.5s ease;
+  margin-right : 1rem
+}
+
+.legende-item:hover {
+  background : #fff;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+}
+
+.circle-yes {
+  background-color : #A1D6D6;
+  width : 40px;
+  height : 40px;
+  border-radius : 50%;
+  margin-right : 1rem;
+  padding : 16px;
+}
+
+.circle-no {
+  background-color : #7A7BA7;
+  width : 40px;
+  height : 40px;
+  border-radius : 50%;
+  margin-right : 1rem
+}
+
+.circle-bof {
+  background-color : #CBB0E7;
+  width : 40px;
+  height : 40px;
+  border-radius : 50%;
+  margin-right : 1rem
+}
+
+.transition-peoples {
+  transform: translateY(100);
+}
+
+.resize {
+  width : 120%;
+  position : absolute ;
+  
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/* Cloud */
+
+.cloud {
+  position : absolute;
+  top : 60%;
+  left : 50%;
+  transform : translate(-50%, -20%);
+  width : 75%;
+  height : 75vh;
+  background : transparent;
+  z-index : 1;
+  transition : all 0.5s ease;
+}
+
+.cloud-1 {
+  position : absolute ;
+  left : 0;
+  top : 35%
+}
+
+.cloud-2 {
+  position : absolute ;
+  right : 5%;
+  top : 25%;
+}
+
+.cloud-circle {
+  /* background: transparent;
+  border: 1px solid #000; */
+  border-radius: 50%;
+  background : #1B1B19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.c-1 {
+  position : absolute;
+  width : 500px;
+  height : 500px;
+  bottom : 3%;
+  left : 0%;
+}
+
+.c-2 {
+  position : absolute;
+  width : 150px;
+  height : 150px;
+  left : 40%;
+  top : 17%;
+}
+
+.c-3 {
+  position : absolute;
+  width : 475px;
+  height : 475px;
+  left : 25%;
+  bottom : 1.5%;
+}
+
+.c-4 {
+  position : absolute;
+  width : 230px;
+  height : 230px;
+  right : 20%;
+  top : 40%;
+}
+
+.c-5 {
+  position : absolute;
+  width : 150px;
+  height : 150px;
+  left : 30%;
+  top : 15%;
+}
+
+.c-6 {
+  position : absolute;
+  width : 330px;
+  height : 330px;
+  right : 5%;
+  bottom : 0%;
+}
+
+.loader {
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  background : #1B1B19;
+  color : white;
+  z-index : 2;
+  transition : all 0.5s ease;
+}
+
+.loader .logo {
+  width : 50%;
+  position : absolute;
+  bottom : 3%;
+  transform : translateX(50%)
+}
+
+.loader .logo img {
+  width : 122px;
+}
+
+.loader-slide-in-top {
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.histogramme {
+  display : flex;
+  width : 80%;
+  display : flex;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom : 5rem;
+  position : relative;
+  z-index : 1;
+}
+
+#box9 .title {
+  position : absolute;
+  top : 10%
+}
+
+.item {
+  width : 100px;
+  /* margin-right : 5rem; */
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar {
+  width : 75px;
+  height : 383px;
+  background: #1B1B19;
+  border-radius: 10px;
+  color : white;
+  position : absolute;
+  bottom : 15%;
+}
+
+.b-2 {
+  height : 358px;
+}
+
+.b-3 {
+  height : 334px;
+}
+
+.b-4 {
+  height : 334px;
+}
+
+.b-5 {
+  height : 272px;
+}
+
+.b-6 {
+  height : 49px;
+}
+
+/* .item .legende {
+  position : absolute;
+  bottom : 0%
+} */
+
+canvas {
+  position : absolute;
+  top : 15%;
+  left : 0%;
+}
+
+.concert-title {
+  display : flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.z-index {
+  position : relative;
+  z-index : 1;
+}
+
+.underline {
+  position : relative;
+  z-index : 0;
+  top : 5vh;
+  left : 7vw;
+}
+
+.mx {
+  margin-right : 8px;
+  margin-left : 8px;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(0px);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(-100vh);
+    /* visibility: hidden; */
+  }
+}
+
+.balloons {
+  width : 100%;
+}
+
+.balloon {
+  width : 30%;
+  
+}
+
+.balloon-1 {
+  width : 40%;
+}
+
+.balloon-2 {
+  transform: translate(-100%, -40%);
+}
+
+.balloon-3 {
+  transform: translate(100%, -125%);
+}
+
+.podium-img {
+  width : 70%
+}
+
+.faces {
+  width : 70%;
+  margin : auto;
+  display : flex;
+  justify-content: space-around;
+}
+
+.face {
+  width : 200px;
+  height : 200px;
+  border-radius : 50%;
+  color : #F1F2EF;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hippo {
+  border : 3px solid rgba(255, 255, 255, 1);
+  background : url(./assets/img/hippolyte.png);
+  background-size : 110%;
+  background-position : center;
+  background-repeat : no-repeat;
+  position : absolute;
+}
+
+.jess {
+  transform : translate(-15%, 20%);
+  background: url(./assets/img/jessy.png);
+  background-size : 110%;
+  background-position : center;
+  background-repeat : no-repeat;
+  border : 3px solid rgba(255, 255, 255, 0.5)
+}
+
+.thabs {
+  transform : translate(15%, 30%);
+  background: url(./assets/img/thabian.png);
+  background-size: 110%;
+  background-position : center;
+  background-repeat : no-repeat;
+  border : 3px solid rgba(255, 255, 255, 0.5)
+}
+
+.scene-1 {
+  position : relative;
+  width : 200px;
+  height : 200px;
+  border-radius : 50%;
+  background : #1B1B19;
+  border :rgba(255, 255, 255, 0.5);
+  z-index : 2;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  opacity : 0;
+  transition : all 0.5s ease;
+} 
+
+.scene-1:hover {
+  animation : appear 0.5s ease;
+  opacity : 1;
+}
+
+.hippo .scene-2 {
+  background : url(./assets/img/hippolyte.png);
+  background-size : cover;
+  background-position : center;
+  background-repeat : no-repeat;
+  position : absolute;
+  width : 200px;
+  height : 200px;
+  border-radius : 50%;
+  z-index : 1;
+  border : rgba(255, 255, 255, 0.5)
+}
+
+@keyframes appear {
+  0% {
+    opacity : 0;
+  }
+  100% {
+    opacity : 1;
+  }
+}
+
+.sticker {
+  width : 15%;
+  position : absolute;
+  z-index : 1;
+}
+
+.s-1 {
+  top : 10%;
+  right : 10%;
+  transform : rotate(-10deg);
+  width : 170px;
+}
+.s-2 {
+  bottom : 10%;
+  right : -2%;
+  transform : rotate(10deg);
+}
+.s-3 {
+  top : 38.5%;
+  left : 1%;
+  transform : rotate(-10deg);
+  width : 291px;
+}
+
+.plateforme-title {
+  position : absolute;
+  top : 0%;
+}
+
+#boxPreTransi {
+  height : 50vh;
+}
+
+#boxTransi {
+  height : 75vh;
+}
+
+.mb-0 {
+  margin-bottom : 0;
+}
+
+.mt-0 {
+  margin-top : 0;
+}
+
+#box11 {
+  height : 125vh;
+}
+
+.plus {
+  width : 10%;
+  transform : translateY(-10px)
+}
+
+#box5 {
+  height : 50vh;
+}
+
+.center {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items : center;
+}
+
+.center p {
+  margin : 0;
+}
+
+.electro {
+  transform : translateY(10px)
+}
+
+.rock {
+  transform : translateY(10px)
+}

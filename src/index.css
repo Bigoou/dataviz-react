@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Playfair Display;
+  src: url(./assets/fonts/PlayfairDisplay.woff2);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter-Black.woff2);
+}
+
+:root {
+  font-family: Playfair Display;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color : #1B1B19
+}
+
+
+h3 {
+  font-family: Inter;
+  font-size : 2.25rem;
+  margin-bottom : 1rem;
+}
+
+.electro {
+  font-size : 1.7rem;
+}
+
+.inter {
+  font-family: Inter;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom : 1rem;
+  font-size: 2rem; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F1F2EF;
+  min-height : 10000px;
+  overflow-x : hidden;
+}
+
+a {
+  text-decoration: none;
+  color : #1B1B19
+}
+
